@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution social links](https://github.com/vborv/social-links-fmproject/))
+- Solution URL: [Solution social links](https://github.com/vborv/social-links-fmproject/)
 - Live Site URL: [Social links project](https://vborv.github.io/social-links-fmproject/)
 
 ## My process
