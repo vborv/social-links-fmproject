@@ -1,0 +1,115 @@
+
+/* 0. IMPORTS */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('../fonts/static/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('../fonts/static/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/* 1. RESET / BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --gray-700: hsl(0, 0%, 20%);
+    --gray-800: hsl(0, 0%, 12%);
+    --gray-900: hsl(0, 0%, 8%);
+    --font: 'Inter', sans-serif;
+  }
+
+  body {
+    font-family: var(--font);
+    font-size: 14px;
+    background-color: var(--gray-900);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .profile-card {
+    background-color: var(--gray-800);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 375px;
+    text-align: center;
+  }
+
+  .avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    margin-bottom:1.5rem;
+  }
+
+  .name{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  .location{
+    font-size: 0.875rem;
+    color: var(--green);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .description{
+    font-weight: 400;
+    margin-bottom:1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .links {
+    list-style-type:none;
+  }
+
+  .links li {
+    margin-bottom: 1rem;
+  }
+
+  .links li:last-child {
+    margin-bottom: 0;
+  }
+
+  .link-btn {
+    display:block;
+    background-color:var(--gray-700);
+    color:var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration:none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .link-btn:hover, .link-btn:focus {
+    background-color:var(--green);
+    color: var(--gray-900);
+    outline:none;
+  }
+   
